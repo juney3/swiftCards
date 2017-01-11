@@ -14,6 +14,7 @@
 		3C2560961E26BD180063C006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2560941E26BD180063C006 /* LaunchScreen.storyboard */; };
 		3C2560A11E26BD180063C006 /* cardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2560A01E26BD180063C006 /* cardGameTests.swift */; };
 		3C2560AC1E26BD180063C006 /* cardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2560AB1E26BD180063C006 /* cardGameUITests.swift */; };
+		3C2560BA1E26D5140063C006 /* deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2560B91E26D5140063C006 /* deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3C2560A71E26BD180063C006 /* cardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2560AB1E26BD180063C006 /* cardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardGameUITests.swift; sourceTree = "<group>"; };
 		3C2560AD1E26BD180063C006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C2560B91E26D5140063C006 /* deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3C25608B1E26BD180063C006 /* AppDelegate.swift */,
 				3C25608D1E26BD180063C006 /* ViewController.swift */,
 				3C25608F1E26BD180063C006 /* Main.storyboard */,
+				3C2560B91E26D5140063C006 /* deck.swift */,
 				3C2560921E26BD180063C006 /* Assets.xcassets */,
 				3C2560941E26BD180063C006 /* LaunchScreen.storyboard */,
 				3C2560971E26BD180063C006 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				3C25608E1E26BD180063C006 /* ViewController.swift in Sources */,
 				3C25608C1E26BD180063C006 /* AppDelegate.swift in Sources */,
+				3C2560BA1E26D5140063C006 /* deck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

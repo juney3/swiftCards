@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,103 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LLo-RO-WNV" userLabel="Label stack">
+                                <rect key="frame" x="16" y="28" width="343" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw or Reset!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm5-1I-pI4">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MDN-pH-Dbl" userLabel="Card stack">
+                                <rect key="frame" x="24" y="56" width="327" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6om-wT-0Qv" userLabel="Card row 1 stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="198"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N6n-Ff-o0Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="198"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSG-SL-66X">
+                                                <rect key="frame" x="111.5" y="0.0" width="104" height="198"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="34K-DJ-Hp7">
+                                                <rect key="frame" x="223.5" y="0.0" width="103.5" height="198"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uG2-X1-gAQ" userLabel="Card row 2 stack">
+                                        <rect key="frame" x="0.0" y="202" width="327" height="198"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-hP-JIO">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="198"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-F4-Vy2">
+                                                <rect key="frame" x="111.5" y="0.0" width="104" height="198"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-BL-dN8">
+                                                <rect key="frame" x="223.5" y="0.0" width="103.5" height="198"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="aYE-yr-Mpw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F80-Fr-NlI" userLabel="Button stack">
+                                <rect key="frame" x="16" y="569" width="343" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sed-xc-rmc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <state key="normal" title="Draw"/>
+                                        <connections>
+                                            <action selector="drawButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ivy-2m-4en"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhx-FN-uqe">
+                                        <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                                        <state key="normal" title="Discard"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWF-77-s9Z">
+                                        <rect key="frame" x="0.0" y="60" width="343" height="30"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGa-VH-Zo2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LLo-RO-WNV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5bn-H8-BaS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MDN-pH-Dbl" secondAttribute="trailing" constant="8" id="5qP-fE-E6s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F80-Fr-NlI" secondAttribute="trailing" id="AZX-z6-Exb"/>
+                            <constraint firstItem="F80-Fr-NlI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hrw-Ne-Nax"/>
+                            <constraint firstItem="LLo-RO-WNV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QaS-vu-CY3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LLo-RO-WNV" secondAttribute="trailing" id="btK-0h-hh4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F80-Fr-NlI" secondAttribute="bottom" constant="8" symbolic="YES" id="jyi-qG-1Sg"/>
+                            <constraint firstItem="MDN-pH-Dbl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="kRE-5H-0BI"/>
+                            <constraint firstItem="MDN-pH-Dbl" firstAttribute="top" secondItem="LLo-RO-WNV" secondAttribute="bottom" constant="8" id="vkI-0b-2WA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="card1" destination="N6n-Ff-o0Q" id="Gbv-f1-MdR"/>
+                        <outlet property="card2" destination="dSG-SL-66X" id="dCP-zE-Shn"/>
+                        <outlet property="card3" destination="34K-DJ-Hp7" id="kB3-zC-eBZ"/>
+                        <outlet property="card4" destination="gdc-hP-JIO" id="NgV-ga-UDi"/>
+                        <outlet property="card5" destination="u9h-F4-Vy2" id="RcL-CU-rhD"/>
+                        <outlet property="card6" destination="HFk-BL-dN8" id="Clg-zB-bpT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
